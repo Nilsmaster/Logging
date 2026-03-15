@@ -1,6 +1,8 @@
 
+// Muuttujien luonti
 const { createLogger, transports, format } = require('winston');
 
+// Loggerin määrittely, kirjoittaa konsoliin aikaleiman ja viestin.
 const logger = createLogger({
   level: 'info',
   format: format.combine(
